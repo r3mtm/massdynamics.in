@@ -1,0 +1,164 @@
+@font-face {
+	font-family: Dubai;
+	src: url('fonts/DubaiW23-Light.woff');
+	font-weight: 200;
+}
+
+@font-face {
+	font-family: Dubai;
+	src: url('fonts/DubaiW23-Medium.woff');
+	font-weight: 500;
+}
+
+
+@font-face {
+	font-family: Roboto;
+	src: url('fonts/Roboto-Bold.woff');
+	font-weight: bold;
+
+}
+@font-face {
+	font-family: Roboto;
+	src: url('fonts/Roboto-Light.woff');
+	font-weight: 200;
+
+}
+@media (orientation: landscape) {
+	.title-head {
+		position: absolute;
+		width: 300px;
+		height: 50px;
+		left: 8vw;
+		top: 0px;
+
+		font-family: Dubai;
+	
+		font-size: 40px;
+		line-height: 68px;
+		display: flex;
+		align-items: center;
+
+		color: #FFFFFF;
+	}
+	.bg {
+		background: url(finalmap1.png);	
+	  	background-repeat: no-repeat;
+		background-color: #1f1f1f;
+	
+	}
+
+	.menu {
+		position: absolute;
+		width: 100px;
+		height: 50px;
+		
+		top: 20px;
+
+		font-family: Roboto;
+		font-size: 15px;
+		line-height: 30px;
+		display: flex;
+		align-items: flex-end;
+
+		color: #FFFFFF;
+	}
+}
+
+@media (orientation: portrait) {
+	.title-head {
+		position: absolute;
+		width: 300px;
+		height: 50px;
+		left: 8vw;
+		top: 0px;
+
+		font-family: Dubai;
+		font-size: 40px;
+		line-height: 68px;
+		display: flex;
+		align-items: center;
+
+		color: #FFFFFF;
+	}
+	.bg {
+		background: url(finalmap1.png);	
+	  	background-repeat: no-repeat;
+		background-color: #1f1f1f;
+		background-position: -800px 0px;
+		background-size: 300%;
+	
+	}
+
+	.menu {
+		position: absolute;
+		width: 100px;
+		height: 50px;
+		
+		top: 20px;
+
+		font-family: Roboto;
+		font-size: 15px;
+		line-height: 30px;
+		display: flex;
+		align-items: flex-end;
+
+		color: #FFFFFF;
+	}
+}
+
+.lcontent {
+	position: absolute;
+	
+	height: 300px;
+	left: 20%;
+	top: calc(50% - 300px/2 + 10px);
+
+	font-family: Roboto;
+	font-weight: bold;
+	
+
+	/* or 100% */
+	display: flex;
+	align-items: center;
+
+	color: #FFFFFF;
+}
+
+.scontent {
+	position: absolute;
+	width: 200px;
+	height: 50px;
+	left: 20%;
+	
+
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: 200;
+	line-height: 41px;
+	display: flex;
+	align-items: center;
+
+	color: #FFFFFF;
+}
+
+
+.lcontw{
+	width: 60%;
+	font-size: 60px;
+	line-height: 60px;
+}
+
+.sconth {
+		top: calc(50% - 50px/2 - 105px);
+}
+
+@media only screen and (min-width: 900px){
+	.lcontw {
+		width: 900px;
+		font-size: 80px;
+		line-height: 80px;
+	}
+	.sconth {
+		top: calc(50% - 50px/2 - 80px);
+	}
+}
