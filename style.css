@@ -1,164 +1,135 @@
 @font-face {
-	font-family: Dubai;
-	src: url('fonts/DubaiW23-Light.woff');
-	font-weight: 200;
+  font-family: Dubai;
+  src: url("fonts/DubaiW23-Light.woff") format("woff");
+  font-weight: 200;
 }
 
 @font-face {
-	font-family: Dubai;
-	src: url('fonts/DubaiW23-Medium.woff');
-	font-weight: 500;
+  font-family: Dubai;
+  src: url("fonts/DubaiW23-Medium.woff") format("woff");
+  font-weight: 500;
 }
-
 
 @font-face {
-	font-family: Roboto;
-	src: url('fonts/Roboto-Bold.woff');
-	font-weight: bold;
-
+  font-family: Roboto;
+  src: url("fonts/Roboto-Bold.woff") format("woff");
+  font-weight: bold;
 }
 @font-face {
-	font-family: Roboto;
-	src: url('fonts/Roboto-Light.woff');
-	font-weight: 200;
-
-}
-@media (orientation: landscape) {
-	.title-head {
-		position: absolute;
-		width: 300px;
-		height: 50px;
-		left: 8vw;
-		top: 0px;
-
-		font-family: Dubai;
-	
-		font-size: 40px;
-		line-height: 68px;
-		display: flex;
-		align-items: center;
-
-		color: #FFFFFF;
-	}
-	.bg {
-		background: url(finalmap1.png);	
-	  	background-repeat: no-repeat;
-		background-color: #1f1f1f;
-	
-	}
-
-	.menu {
-		position: absolute;
-		width: 100px;
-		height: 50px;
-		
-		top: 20px;
-
-		font-family: Roboto;
-		font-size: 15px;
-		line-height: 30px;
-		display: flex;
-		align-items: flex-end;
-
-		color: #FFFFFF;
-	}
+  font-family: Roboto;
+  src: url("fonts/Roboto-Light.woff") format("woff");
+  font-weight: 200;
 }
 
-@media (orientation: portrait) {
-	.title-head {
-		position: absolute;
-		width: 300px;
-		height: 50px;
-		left: 8vw;
-		top: 0px;
-
-		font-family: Dubai;
-		font-size: 40px;
-		line-height: 68px;
-		display: flex;
-		align-items: center;
-
-		color: #FFFFFF;
-	}
-	.bg {
-		background: url(finalmap1.png);	
-	  	background-repeat: no-repeat;
-		background-color: #1f1f1f;
-		background-position: -800px 0px;
-		background-size: 300%;
-	
-	}
-
-	.menu {
-		position: absolute;
-		width: 100px;
-		height: 50px;
-		
-		top: 20px;
-
-		font-family: Roboto;
-		font-size: 15px;
-		line-height: 30px;
-		display: flex;
-		align-items: flex-end;
-
-		color: #FFFFFF;
-	}
+body {
+  display: grid;
+  grid-template-rows: 100vh auto;
+  grid-template-areas:
+    "main"
+    "footer";
+  margin: 0;
+  padding: 0;
 }
 
-.lcontent {
-	position: absolute;
-	
-	height: 300px;
-	left: 20%;
-	top: calc(50% - 300px/2 + 10px);
-
-	font-family: Roboto;
-	font-weight: bold;
-	
-
-	/* or 100% */
-	display: flex;
-	align-items: center;
-
-	color: #FFFFFF;
+main {
+  grid-area: main;
+  background: url("finalmap1.png");
+  background-size: cover;
+  background-position: left 40% bottom 0%;
+  color: white;
 }
 
-.scontent {
-	position: absolute;
-	width: 200px;
-	height: 50px;
-	left: 20%;
-	
-
-	font-family: Roboto;
-	font-size: 18px;
-	font-weight: 200;
-	line-height: 41px;
-	display: flex;
-	align-items: center;
-
-	color: #FFFFFF;
+.main-logotext {
+  font-family: Dubai;
+  font-size: 2.5rem;
+  display: flex;
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
 }
 
-
-.lcontw{
-	width: 60%;
-	font-size: 60px;
-	line-height: 60px;
+#mass {
+  font-weight: 500;
 }
 
-.sconth {
-		top: calc(50% - 50px/2 - 105px);
+#dynamics {
+  font-weight: 200;
 }
 
-@media only screen and (min-width: 900px){
-	.lcontw {
-		width: 900px;
-		font-size: 80px;
-		line-height: 80px;
-	}
-	.sconth {
-		top: calc(50% - 50px/2 - 80px);
-	}
+.main-content {
+  font-family: Roboto;
+  font-weight: 200;
+  position: absolute;
+  top: 10rem;
+  left: 1.5rem;
+}
+
+.main-content__name {
+  font-size: 1.5rem;
+}
+
+.main-content__role {
+  font-weight: bold;
+  font-size: 2.9rem;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content__role span {
+  margin-top: 1rem;
+}
+
+.main-content__description {
+  margin-top: 4rem;
+  width: 20rem;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+}
+
+footer {
+  background: #f1f3f6;
+  width: 100%;
+}
+
+.footer__address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 0.1rem;
+  font-family: Roboto;
+}
+
+.footer__address > ul {
+  list-style: none;
+}
+
+.footer__address > ul li {
+  padding-top: 5px;
+}
+
+@media (min-width: 40rem) {
+  main {
+    background-position: left;
+  }
+
+  .main-logotext {
+    top: 2.5rem;
+    left: 5.6rem;
+  }
+
+  .main-content {
+    top: 20rem;
+    left: 22rem;
+  }
+
+  .main-content__role {
+    font-size: 5rem;
+    margin-top: 2rem;
+  }
+
+  .footer__address {
+    align-items: flex-end;
+    margin-right: 1rem;
+  }
 }
