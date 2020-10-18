@@ -170,6 +170,7 @@ footer {
   flex-direction: column;
   margin: 0.5rem;
   padding: 0;
+  list-style: none;
 }
 
 .footer__address ul li {
