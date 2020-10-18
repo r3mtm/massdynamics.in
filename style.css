@@ -27,20 +27,20 @@
   background: #1f1f1f;
 }
 
-html {
+html,
+body {
   height: 100%;
 }
 
 body {
   display: grid;
-  grid-template-rows: 8.7rem 100% 1rem fit-content(10rem);
+  grid-template-rows: 8.7rem 1fr auto auto;
   grid-template-areas:
     "header"
     "main"
     "hr-bottom"
     "footer";
   margin: 0;
-  height: 100%;
   padding: 0;
 }
 
