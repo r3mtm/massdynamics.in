@@ -82,7 +82,8 @@ main {
   grid-area: main;
   margin: 0 auto;
   /* border: 1px solid white; */
-  width: 40%;
+  width: 90%;
+  max-width: 766px;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
