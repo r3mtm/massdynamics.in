@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @font-face {
   font-family: Dubai-light;
   src: url("fonts/Dubai-Light.ttf") format("woff");
@@ -19,7 +26,9 @@ html {
 }
 
 body {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-rows: 3.59rem auto fit-content(3rem);
   grid-template-rows: 3.59rem auto fit-content(3rem);
   grid-template-areas:
     "header"
@@ -66,6 +75,8 @@ body {
 }
 
 main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: main;
   background: url("assets/background.jpg") no-repeat;
   background-size: cover;
@@ -113,7 +124,11 @@ main {
 }
 
 footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
   grid-area: footer;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
   align-items: stretch;
   width: 100%;
   background-color: rgb(41, 46, 57);
@@ -126,6 +141,9 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
   margin: 0 auto;
@@ -207,6 +225,7 @@ footer {
 
 @media (min-width: 59rem) {
   body {
+    -ms-grid-rows: 5.75rem 80% 10%;
     grid-template-rows: 5.75rem 80% 10%;
     overflow: hidden;
     background: url("assets/background.jpg") no-repeat;
@@ -271,11 +290,18 @@ footer {
   .footer {
     width: 85%;
     padding: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
   .footer-right__address {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
     align-items: flex-end;
   }
 
