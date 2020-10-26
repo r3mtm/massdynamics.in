@@ -70,6 +70,7 @@ main {
   background: url("assets/background.jpg") no-repeat;
   background-size: cover;
   background-position: center;
+  padding-bottom: 7rem;
 }
 
 .main {
@@ -233,6 +234,7 @@ footer {
     background: rgba(0, 0, 0, 0);
     background-size: auto;
     background-position: 0%;
+    padding-bottom: 0;
   }
 
   .main {
